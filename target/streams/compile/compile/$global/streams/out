@@ -1,56 +1,35 @@
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
-[0m[[0mdebug[0m] [0m	removed:Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MsgDeliveryRel.scala, /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/AskTest.scala, /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/FutureTest.scala, /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/Ping.scala)[0m
-[0m[[0mdebug[0m] [0m	added: Set()[0m
-[0m[[0mdebug[0m] [0m	modified: Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MyActor.scala)[0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MyActor.scala)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
 [0m[[0mdebug[0m] [0mRemoved products: Set()[0m
 [0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MyActor.scala, /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MsgDeliveryRel.scala, /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/AskTest.scala, /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/FutureTest.scala, /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/Ping.scala)[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MyActor.scala)[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m	product: Set()[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MyActor.scala, /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MsgDeliveryRel.scala, /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/AskTest.scala, /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/FutureTest.scala, /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/Ping.scala)[0m
-[0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (5) exceeded 50.0% of all sources[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MyActor.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/knoldus/workspace/Akka-prectice/target/scala-2.10/classes...[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 20b9c597, interfacing (CompilerInterface) with Scala compiler version 2.10.4[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler b8bc6e, interfacing (CompilerInterface) with Scala compiler version 2.10.4[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/home/knoldus/java/jdk1.7.0_71/jre/lib/resources.jar:/home/knoldus/java/jdk1.7.0_71/jre/lib/rt.jar:/home/knoldus/java/jdk1.7.0_71/jre/lib/sunrsasign.jar:/home/knoldus/java/jdk1.7.0_71/jre/lib/jsse.jar:/home/knoldus/java/jdk1.7.0_71/jre/lib/jce.jar:/home/knoldus/java/jdk1.7.0_71/jre/lib/charsets.jar:/home/knoldus/java/jdk1.7.0_71/jre/lib/jfr.jar:/home/knoldus/java/jdk1.7.0_71/jre/classes:/home/knoldus/.sbt/boot/scala-2.10.4/lib/scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/home/knoldus/workspace/Akka-prectice/target/scala-2.10/classes:/home/knoldus/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.3.9.jar:/home/knoldus/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar[0m
-[0m[[0mdebug[0m] [0mScala compilation took 3.815794176 s[0m
-[0m[[0mdebug[0m] [0mInvalidating /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MsgDeliveryRel.scala...[0m
-[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MsgDeliveryRel.scala...[0m
-[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MsgDeliveryRel.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MsgDeliveryRel.scala)[0m
-[0m[[0mdebug[0m] [0mThe /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MsgDeliveryRel.scala source file has the following implicit definitions changed:[0m
-[0m[[0mdebug[0m] [0m	self, context.[0m
-[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
-[0m[[0mdebug[0m] [0mInvalidating /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/AskTest.scala...[0m
-[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/AskTest.scala...[0m
-[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/AskTest.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/AskTest.scala)[0m
-[0m[[0mdebug[0m] [0mThe /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/AskTest.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0mScala compilation took 4.091288935 s[0m
+[0m[[0mdebug[0m] [0mInvalidating /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MyActor.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MyActor.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MyActor.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MyActor.scala)[0m
+[0m[[0mdebug[0m] [0mThe /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/MyActor.scala source file has the following implicit definitions changed:[0m
 [0m[[0mdebug[0m] [0m	self, timeout, context.[0m
-[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
-[0m[[0mdebug[0m] [0mInvalidating /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/FutureTest.scala...[0m
-[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/FutureTest.scala...[0m
-[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/FutureTest.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/FutureTest.scala)[0m
-[0m[[0mdebug[0m] [0mThe /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/FutureTest.scala source file has the following implicit definitions changed:[0m
-[0m[[0mdebug[0m] [0m	self, timeout, context.[0m
-[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
-[0m[[0mdebug[0m] [0mInvalidating /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/Ping.scala...[0m
-[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/Ping.scala...[0m
-[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/Ping.scala)[0m
-[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/home/knoldus/workspace/Akka-prectice/src/main/scala/akka/Ping.scala)[0m
-[0m[[0mdebug[0m] [0mThe /home/knoldus/workspace/Akka-prectice/src/main/scala/akka/Ping.scala source file has the following implicit definitions changed:[0m
-[0m[[0mdebug[0m] [0m	self, context.[0m
 [0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
 [0m[[0mdebug[0m] [0mNew invalidations:[0m
 [0m[[0mdebug[0m] [0m	Set()[0m
