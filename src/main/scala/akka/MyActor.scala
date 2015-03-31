@@ -1,18 +1,20 @@
 package akka
 
+import scala.concurrent.Await
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.duration.DurationInt
+import scala.io.Source
+import scala.util.Failure
+import scala.util.Success
 import akka.actor._
-import scala.concurrent.Future
 import akka.pattern.ask
 import akka.util.Timeout
-import scala.concurrent.Await
-import scala.concurrent.duration._
-import scala.io.Source
-import akka.actor._
 
 case class Word(word: String)
 case class File(file: String)
 case class Line(line: String)
 case class Number(words: Int)
+case object Count
 
 class ParentActor extends Actor {
   implicit val timeout = Timeout(5.second)
@@ -22,27 +24,37 @@ class ParentActor extends Actor {
     case File(file) => {
       for (line <- Source.fromFile(file).getLines()) {
         val future = childActor ? Line(line)
-        val result = Await.result(future, timeout.duration).asInstanceOf[Number]
-        count = count + result.words
+        future onComplete {
+          case Success(res) => {
+           count= count + res.asInstanceOf[Number].words
+           println("I "+count)
+          } 
+          case Failure(f)   => println("something wrong happened")
+        }
       }
-      println(s"Total words in file: $count")
-      Main.system.shutdown()
     }
-
+    case Count=> {
+      println("count------------",count)
+      sender ! count
+    }
   }
 }
 class ChildActor extends Actor {
-  var words = 0
   def receive = {
-    case Line(line: String) => words = line.split(" ").size
-      sender ! Number(words)
+    case Line(line: String) =>
+      sender ! Number(line.split(" ").size)
   }
 }
 
 object Main extends App {
   val system = ActorSystem("HelloSystem")
   val parentActor = system.actorOf(Props[ParentActor], name = "parentActor")
-  val path = "/home/knoldus/Desktop/data"
-  parentActor ! File(path)
-
+  implicit val timeout = Timeout(5.second)
+  parentActor ! File("data")
+  val result = parentActor ? Count
+  result map{res=>
+    println("final result ---------------",res)
+  }
+  
+  //Main.system.shutdown()
 }

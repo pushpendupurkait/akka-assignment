@@ -28,7 +28,7 @@ class child extends Actor {
   }
   MsgDelRel.system.shutdown()
 }
-object MsgDelRel extends App {
+object MsgDelRel {
   val system = ActorSystem("MyActorSystem")
   val parent = system.actorOf(Props[parent], "parent")
   val child = system.actorOf(Props[child], "child")
